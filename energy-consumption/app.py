@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 from statsmodels.tsa.statespace.sarimax import SARIMAXResultsWrapper
 
-sarima_model = SARIMAXResultsWrapper.load('models/sarima_1001117.pickle')
+sarima_model = SARIMAXResultsWrapper.load('energy-consumption/models/sarima_1001117.pickle')
 
 st.title('Prediction of Energy Consumption')
 Ntest = st.slider('Select Forecast Horizon', 14, 30, 14)
